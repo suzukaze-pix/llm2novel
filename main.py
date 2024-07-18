@@ -55,6 +55,7 @@ class LLM2Novel:
             y_offset += 30
 
     def run(self):
+        print("ran")
         running = True
         while running:
             for event in pygame.event.get():
@@ -75,7 +76,7 @@ class LLM2Novel:
         pygame.quit()
         sys.exit()
 
-# 使用例
+# example こんな感じで動かしてください
 if __name__ == "__main__":
     novel = LLM2Novel()
     novel.set_character_image("character.jpg")  # 立ち絵の画像ファイルを指定
